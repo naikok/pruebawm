@@ -14,7 +14,6 @@ use App\Utils\Validator;
 
 class InputCommand extends Command
 {
-    protected static $defaultName = 'app:search-command';
 
     private $io;
     private $personBusinessService;
@@ -57,7 +56,7 @@ class InputCommand extends Command
             'If you prefer to not use this interactive wizard command, provide the',
             'arguments required by this command as follows:',
             '',
-            ' $ php bin/console app:search-command query azulados',
+            ' $ php bin/console app:search-command <word>',
             '',
             'Now we\'ll ask you for the value of all the missing command arguments.',
         ]);
@@ -80,7 +79,6 @@ class InputCommand extends Command
 
         try {
             $result = $this->personBusinessService->findBySearchQuery($query);
-            $output->writeln($result);
             $this->io->success($result);
             return 0;
         } catch(\Exception $e) {
