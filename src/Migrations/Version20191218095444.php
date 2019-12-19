@@ -24,7 +24,6 @@ final class Version20191218095444 extends AbstractMigration
         $this->addSql("INSERT INTO Persons values (NULL,'azul claro', 'azul claro', NULL, 'Juan')");
         $this->addSql("INSERT INTO Persons values (NULL,'azulados', 'rojo', 'azul', 'Irene')");
         $this->addSql("INSERT INTO Persons values (NULL, NULL, NULL, 'naranja', 'Manuel')");
-
     }
 
 
