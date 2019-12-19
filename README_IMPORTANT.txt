@@ -5,10 +5,11 @@ Requirimientos de aplicación:
 
 Instalación:
 
-Clonarse el repositorio de github gitclone:
+Clonarse el repositorio de github:
 
-    Instalar dependencias de proyectos necesarias en el directorio raiz de la carpeta del proyecto realizando composer install,
-    esto instalará las dependencias necesarias de symfony para el proyecto.
+    Instalar dependencias de proyectos necesarias en el directorio raiz de la carpeta del proyecto realizando:
+    composer install
+    (esto instalará las dependencias necesarias de symfony para el proyecto)
 
 Configurar la base de datos de nuestro proyecto:
 
